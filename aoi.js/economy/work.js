@@ -1,3 +1,5 @@
+//Variables Require: work: "0"
+
 module.exports = {
 name: "work",
   code: `$If[$getGlobalUserVar[work]==1]
