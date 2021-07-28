@@ -6,6 +6,15 @@ module.exports = {
 name: "balance",
 aliases: ["bal"],
 code: `$title[$username[$mentioned[1;yes]]'s Balance]
-$description[Money: $getGlobalUserVA\ar[cash;$mentioned[1]]
+$description[Money: $getGlobalUserVar[cash;$mentioned[1]]
 Bank: $getGlobalUserVar[bank;$mentioned[1]]]
 $color[RANDOM]`}
+
+//None Command Handle
+bot.command({
+name: "balance",
+aliases: ["bal"],
+code: `$title[$username[$mentioned[1;yes]]'s Balance]
+$description[Money: $getGlobalUserVar[cash;$mentioned[1]]
+Bank: $getGlobalUserVar[bank;$mentioned[1]]]
+$color[RANDOM]`})
